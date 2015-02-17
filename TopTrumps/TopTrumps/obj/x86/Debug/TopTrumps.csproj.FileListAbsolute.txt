@@ -1,0 +1,7 @@
+C:\Users\Baran\Documents\GitHub\TopTrumps\TopTrumps\TopTrumps\obj\x86\Debug\TopTrumps.csprojResolveAssemblyReference.cache
+C:\Users\Baran\Documents\GitHub\TopTrumps\TopTrumps\TopTrumps\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Baran\Documents\GitHub\TopTrumps\TopTrumps\TopTrumps\bin\x86\Debug\TopTrumps.exe
+C:\Users\Baran\Documents\GitHub\TopTrumps\TopTrumps\TopTrumps\bin\x86\Debug\TopTrumps.pdb
+C:\Users\Baran\Documents\GitHub\TopTrumps\TopTrumps\TopTrumps\obj\x86\Debug\TopTrumps.exe
+C:\Users\Baran\Documents\GitHub\TopTrumps\TopTrumps\TopTrumps\obj\x86\Debug\TopTrumps.pdb
+C:\Users\Baran\Documents\GitHub\TopTrumps\TopTrumps\TopTrumps\bin\x86\Debug\Content\Textures\Default\cardDefault.xnb

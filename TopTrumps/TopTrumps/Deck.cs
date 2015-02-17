@@ -10,39 +10,36 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 
-namespace TopTrumps
-{
-    /// <summary>
-    /// This is a game component that implements IUpdateable.
-    /// </summary>
-    public class Deck : Microsoft.Xna.Framework.GameComponent
-    {
-        public Deck(Game game)
+namespace TopTrumps {
+    public abstract class Deck : Microsoft.Xna.Framework.GameComponent {
+        private String _deckName;
+        private Stack<Card> _cards;
+        private Texture2D cardTexture;
+
+        public Deck(Game game, String name, Stack<Card> cards, Texture2D cardTexture)
             : base(game)
         {
-            // TODO: Construct any child components here
+            _deckName = name;
+            _cards = cards;
+            this.cardTexture = cardTexture;
         }
 
-        /// <summary>
-        /// Allows the game component to perform any initialization it needs to before starting
-        /// to run.  This is where it can query for any required services and load content.
-        /// </summary>
-        public override void Initialize()
-        {
-            // TODO: Add your initialization code here
+        public abstract override void Initialize();
 
-            base.Initialize();
+        public abstract void LoadContent(ContentManager c);
+
+        public abstract override void Update(GameTime gameTime);
+
+        public Stack<Card> cards {
+            get {
+                return _cards;
+            }
         }
 
-        /// <summary>
-        /// Allows the game component to update itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        public override void Update(GameTime gameTime)
-        {
-            // TODO: Add your update code here
-
-            base.Update(gameTime);
+        public String deckName {
+            get {
+                return _deckName;
+            }
         }
     }
 }
